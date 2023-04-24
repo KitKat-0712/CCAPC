@@ -10,5 +10,9 @@ def index():
 def username(username):
     return 'i am ' + username
 
+@app.route('/age/<int:age>')
+def userage(age):
+    return 'i am ' + str(age) + ' years old'
+
 app.run()
 ```
